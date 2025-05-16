@@ -5,10 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/index.css">
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Nigerian Dish Recipe Generator</title>
 </head>
 <body>
-    <h1>AI Nigerian Dish Recipe Generator</h1>
+    
+     <div class="container">
+ <header>
+   <h1>AI Nigerian Dish Recipe Generator</h1>
+</header>
+
+<main><div class="form-container">
+    <form id="recipe-generator-form">
+        <input type="text"  placeholder="What dish do you want to cook?" 
+        autofocus 
+        required
+        autocomplete="off"
+        class="instruction"
+        id="user-input"
+
+        />
+        <button type="submit" class="submit-button" id="submit">Generate Recipe</button>
+    </form>
+    <div class="hint">e.g Jollof rice, Egusi, Kunu </div>
+    </div>
+    <div class="recipe hidden" id="recipe"></div>
+</main>
+
+
+
+
+<footer>This project was coded by <a href="https://github.com/Mahopeok/">Okpanachi Hope</a>  
+     is open-sourced on <a href="https://github.com/Mahopeok/French-poems-generator">Github</a> and hosted on <a href="https://frenchpoemaigenerator.netlify.app/">Netlify</a>.
+
+</footer>
+</div>
  <script src="src/index.js"></script>   
 </body>
 </html>
